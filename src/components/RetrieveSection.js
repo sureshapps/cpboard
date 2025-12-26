@@ -16,7 +16,7 @@ const RetrieveSection = () => {
 
   useEffect(() => {
     // Make a fetch request to your Express.js backend
-    fetch('https://shareboard.onrender.com/initial')
+    fetch('https://cpboard.vercel.app/initial')
       .then(response => response.text())
       .then(data => {
         console.log(data); // Log the response to the console
@@ -35,7 +35,7 @@ const RetrieveSection = () => {
     }
 
     try {
-      const response = await fetch(`https://shareboard.onrender.com/retrieve?id=${id}`);
+      const response = await fetch(`https://cpboard.vercel.app/retrieve?id=${id}`);
       const retrieved = await response.json();
 
       const retrievedText = retrieved.data.text;

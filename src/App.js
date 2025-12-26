@@ -1,4 +1,5 @@
 import "./App.css";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import CopySection from "./components/CopySection";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -21,6 +22,7 @@ function App() {
         </div>
       </div>
       <Footer />
+      <SpeedInsights />
     </main>
   );
 }
